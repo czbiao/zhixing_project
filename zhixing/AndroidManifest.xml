@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.biao.readersex"
+    android:versionCode="4"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="24" />
+
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sex"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+          <activity
+         	android:name="com.biao.readersex.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.biao.readersex.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/TimeAppTheme" >
+            
+        </activity>
+        <activity
+            android:name="com.biao.readersex.activity.ArticleContentActivity"
+            android:theme="@style/ActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.biao.readersex.activity.BaseActivity"
+            android:theme="@style/ActionBarTheme" >
+        </activity>
+     
+        <activity
+            android:name="com.biao.readersex.activity.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.biao.readersex.activity.FBActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FBAppTheme" >
+        </activity>
+        <activity
+            android:name="com.biao.readersex.activity.FeedBackActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+             android:theme="@style/FBAppTheme"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity android:name="com.biao.readersex.activity.EnglishContentActivity" >
+        </activity>
+        <activity android:name="com.umeng.fb.ConversationActivity" />
+        <activity android:name="com.biao.readersex.activity.AboutActivity"></activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="54ab7c5cfd98c589c3000792" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" >
+        </meta-data>
+        
+        <meta-data
+            android:name="WEIBO_APPKEY"
+            android:value="464972359" />
+        <meta-data
+            android:name="WEIBO_CHANNEL"
+            android:value="weibo" />
+
+        <service android:name="com.biao.readersex.service.AppUpdateService" >
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true"  
+	android:clipToPadding="false">
+	
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:text="\t本应用资料来源于《善解童贞》系列书籍、《开放的性教育：影响孩子一生的性教育》及网络。"
+        android:textSize="20sp" />
+
+</LinearLayout>
